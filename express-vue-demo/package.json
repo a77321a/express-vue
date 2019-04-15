@@ -8,11 +8,13 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "server": "nodemon server/app.js"
+    "server": "nodemon server/app.js",
+    "db":"nodemon datebase/index.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
+    "mongodb": "^3.2.3",
     "nodemon": "^1.18.11",
     "qs": "^6.7.0",
     "vue": "^2.5.2",
