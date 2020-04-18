@@ -1,5 +1,5 @@
-import {get,post} from '@/utils/axios'
+import { get, post } from '@/utils/axios'
 
-export function getUser(params){
-    return get('/',params)
+export function getUser (params) {
+    return get('/', params)
 }

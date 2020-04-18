@@ -1,15 +1,27 @@
+<!--
+ * @Descripttion: 
+ * @Author: 
+ * @Date: 2019-12-29 14:37:37
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-04-18 16:15:42
+ -->
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {}
+  },
+  mounted() {
+    abc()
+  }
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
