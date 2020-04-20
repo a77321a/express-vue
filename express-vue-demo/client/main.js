@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2019-12-29 14:37:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-04-18 16:32:13
+ * @LastEditTime: 2020-04-20 15:31:06
  */
 import Vue from 'vue'
 import App from './App'
@@ -16,7 +16,7 @@ Vue.config.errorHandler = (err, vm, info) => {
   console.log('errorHandle:', err)
   const str = window.btoa(JSON.stringify(info))
   console.log('errorHandle11:', str)
-
+  // 修改
   new Image().src = `http://localhost:4000/error/?info=${str}`
 }
 /* eslint-disable no-new */
