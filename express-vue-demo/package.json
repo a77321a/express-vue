@@ -12,7 +12,7 @@
     "db": "nodemon datebase/index.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
     "f-vue-ui": "0.0.15",
