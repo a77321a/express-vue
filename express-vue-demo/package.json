@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "server": "nodemon server/app.js",
+    "server": "nodemon --inspect server/app.js",
     "db": "nodemon datebase/index.js"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "nodemon": "^1.18.11",
     "qs": "^6.7.0",
     "superagent": "^5.2.2",
+    "superagent-charset": "^1.2.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "xsn-ui": "^0.1.7"
