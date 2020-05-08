@@ -13,12 +13,15 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
     "f-vue-ui": "0.0.15",
     "fui": "^0.1.0",
     "mongodb": "^3.2.3",
+    "nightmare": "^3.0.2",
     "nodemon": "^1.18.11",
     "qs": "^6.7.0",
+    "superagent": "^5.2.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "xsn-ui": "^0.1.7"

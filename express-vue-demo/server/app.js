@@ -2,8 +2,8 @@
  * @Descripttion: 
  * @Author: 
  * @Date: 2019-12-29 14:37:37
- * @LastEditors: 
- * @LastEditTime: 2020-04-18 16:31:39
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-05-08 17:02:50
  */
 const express = require('express')
 const fs = require('fs')
@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({
 
 // 导入路由awdwd
 let homeRouter = require('./index')
-app.use('/error', homeRouter)
+app.use('/', homeRouter)
 
 
 app.listen(4000)
