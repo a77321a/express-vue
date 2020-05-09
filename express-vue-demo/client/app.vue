@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2019-12-29 14:37:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-04-18 16:15:42
+ * @LastEditTime: 2020-05-09 17:48:37
  -->
 <template>
   <div id="app">
@@ -13,22 +13,25 @@
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
   data() {
-    return {}
+    return {};
   },
   mounted() {
-    abc()
+    // abc();
   }
-}
+};
 </script>
 <style>
+body,
+html {
+  height: 100%;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  height: 100%;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
