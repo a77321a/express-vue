@@ -3,17 +3,13 @@
  * @Author: 
  * @Date: 2019-12-29 14:37:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-08 17:02:50
+ * @LastEditTime: 2020-05-09 11:22:59
  */
 const express = require('express')
 const fs = require('fs')
 const bodyParser = require('body-parser')
 const path = require('path')
 const cors = require('cors')
-
-
-
-//  洒水大所多
 
 const app = express()
 // 配置express
@@ -32,7 +28,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // 导入路由awdwd
-let homeRouter = require('./index')
+let homeRouter = require('./api')
 app.use('/', homeRouter)
 
 
