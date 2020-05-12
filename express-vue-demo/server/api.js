@@ -9,6 +9,7 @@ const express = require('express')
 const router = express.Router()
 const getBookList = require('./spider/spiderBookList')
 const getBookDetail = require('./spider/spiderBookDetail')
+const getReadText = require('./spider/spiderReadText')
 
 const db = require('../datebase/index')
 
@@ -20,6 +21,11 @@ router.post('/bookdetail', (req, res, next) => {
     var params = req.body.href
     let bookdetail = {}
     bookdetail = getBookDetail(params, res)
+})
+router.post('/readtext', (req, res, next) => {
+    var params = req.body.href
+    let text = ''
+    text = getReadText(params, res)
 })
 
 module.exports = router

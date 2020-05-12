@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2020-05-09 18:12:41
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-12 17:26:25
+ * @LastEditTime: 2020-05-12 17:50:10
  -->
 <template>
   <div>
@@ -11,7 +11,7 @@
     <van-cell
       v-for="(item, index) in book.chapters"
       :key="index"
-      @click="handleToRead((item, index))"
+      @click="handleToRead(item, index)"
       :title="item.name"
     />
   </div>
@@ -47,7 +47,16 @@ export default {
           // })
         });
     },
-    handleToRead(item, index) {}
+    handleToRead(item, index) {
+      this.$store.commit("SET_CHAPTER", this.book.chapters);
+      this.$router.push({
+        name: "Read",
+        query: {
+          href: this.$store.state.url + item.href,
+          chapter_index: index
+        }
+      });
+    }
   }
 };
 </script>
