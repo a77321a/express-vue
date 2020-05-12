@@ -26,8 +26,7 @@
     "superagent-charset": "^1.2.0",
     "vant": "^2.8.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "xsn-ui": "^0.1.7"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2020-05-09 18:12:41
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-12 17:21:08
+ * @LastEditTime: 2020-05-12 17:26:25
  -->
 <template>
   <div>
@@ -11,6 +11,7 @@
     <van-cell
       v-for="(item, index) in book.chapters"
       :key="index"
+      @click="handleToRead((item, index))"
       :title="item.name"
     />
   </div>
@@ -45,7 +46,8 @@ export default {
           // i.chapName = i.split('  ')[1]
           // })
         });
-    }
+    },
+    handleToRead(item, index) {}
   }
 };
 </script>

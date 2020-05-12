@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2020-05-08 17:06:11
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-09 16:25:40
+ * @LastEditTime: 2020-05-12 16:27:16
  */
 const superagent = require('superagent');
 const charset = require('superagent-charset');
@@ -40,14 +40,14 @@ const getBookList = (param, db) => {
       return err
     } else {
       let bookList = handleFomatBookList(res)
-      if (bookList.length) {
-        bookList.forEach(i => {
-          let sql = `insert ignore into book_list(book_name,book_href,author,type) values('${i.title}','${i.href}','${i.author}','xuanhuan')`
-          db.query(sql, [], () => {
-            console.log('添加成功')
-          })
-        })
-      }
+      // if (bookList.length) {
+      //   bookList.forEach(i => {
+      //     let sql = `insert ignore into book_list(book_name,book_href,author,type) values('${i.title}','${i.href}','${i.author}','xuanhuan')`
+      //     db.query(sql, [], () => {
+      //       console.log('添加成功')
+      //     })
+      //   })
+      // }
       param.send(bookList)
     }
   });
