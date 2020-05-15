@@ -3,7 +3,7 @@
  * @Author: 
  * @Date: 2020-05-12 17:39:03
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-12 18:29:01
+ * @LastEditTime: 2020-05-15 16:22:51
  -->
 <template>
   <div>
@@ -41,11 +41,9 @@ export default {
 }
 </style> -->
 <style scoped>
->>> #app {
-  overflow: hidden;
-}
 .read-text {
   column-width: 375px;
   height: 812px;
+  /* 最多4列 */
 }
 </style>
