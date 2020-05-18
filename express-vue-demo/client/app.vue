@@ -3,10 +3,11 @@
  * @Author: 
  * @Date: 2019-12-29 14:37:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-12 18:29:50
+ * @LastEditTime: 2020-05-18 19:43:26
  -->
 <template>
-  <div id="app">
+  <div :class="'column'" id="app">
+    <!-- -->
     <router-view />
   </div>
 </template>
