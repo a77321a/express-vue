@@ -7,24 +7,11 @@
  */
 const express = require('express')
 const router = express.Router()
-const getBookList = require('./spider/spiderBookList')
-const getBookDetail = require('./spider/spiderBookDetail')
 const getReadText = require('./spider/spiderReadText')
 
-const db = require('../datebase/index')
-
-router.get('/booklist', (req, res, next) => {
-    let book_list = []
-    book_list = getBookList(res, db)
-})
-router.post('/bookdetail', (req, res, next) => {
-    var params = req.body.href
-    let bookdetail = {}
-    bookdetail = getBookDetail(params, res)
-})
-router.post('/readtext', (req, res, next) => {
-    var params = req.body.href
-    let text = ''
+router.get('/readtext', (req, res, next) => {
+    var params = ''
+    // let text = ''
     text = getReadText(params, res)
 })
 
