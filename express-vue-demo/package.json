@@ -21,7 +21,7 @@
     "mysql": "^2.18.1",
     "nightmare": "^3.0.2",
     "nodemon": "^1.18.11",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "superagent": "^5.2.2",
     "superagent-charset": "^1.2.0",
     "vant": "^2.8.1",
